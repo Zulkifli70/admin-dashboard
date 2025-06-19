@@ -37,6 +37,56 @@ h6 {
 
 .header {
   grid-column: 2/4;
+  display: flex;
+}
+
+.header svg {
+  width: 25px;
+}
+
+.searchbar {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  flex: 2;
+}
+
+.search-icon {
+  display: flex;
+}
+
+.search-input {
+  display: flex;
+  flex: 1;
+}
+
+.search-input input {
+  width: 80%;
+  border: none;
+  border-radius: 20px;
+  background-color: aliceblue;
+  height: 30px;
+  padding: 0 1em;
+}
+
+.header-right-side {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 1.5em;
+  flex: 1;
+  gap: 0.825em;
+}
+
+.user-icon {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header-user-name {
+  font-size: 0.7rem;
+  color: #0d1117;
 }
 
 .sidebar {
