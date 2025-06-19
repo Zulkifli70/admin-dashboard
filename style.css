@@ -38,12 +38,13 @@ h6 {
 .header {
   grid-column: 2/4;
   display: flex;
-  background-color: #818fb4;
+  background-color: #252d4a;
   align-content: center;
 }
 
 .header svg {
   width: 25px;
+  fill: white;
 }
 
 .searchbar {
@@ -87,12 +88,12 @@ h6 {
 
 .header-user-name {
   font-size: 0.7rem;
-  color: #0d1117;
+  color: #ffffff;
 }
 
 .sidebar {
   grid-row: 1/4;
-  background-color: #0d1117;
+  background-color: #0a0e27;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -130,11 +131,12 @@ h6 {
 .menu {
   display: flex;
   align-items: center;
+  border-radius: 5px;
   gap: 0.5em;
 }
 
 .menu:hover {
-  opacity: 0.7;
+  background-color: #4fc3f7;
 }
 
 .menu-logo {
@@ -160,7 +162,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   grid-column: 2/4;
-  background-color: #818fb4;
+  background-color: #252d4a;
 }
 
 .user-greeting-info {
@@ -198,8 +200,8 @@ h6 {
 }
 
 .btn-action {
-  background-color: #238636;
-  color: white;
+  background-color: #4fc3f7;
+  color: rgb(46, 46, 46);
   font-weight: 900;
   border: none;
   border-radius: 20px;
@@ -207,12 +209,12 @@ h6 {
 }
 
 .btn-action:hover {
-  background-color: #1c6e2c;
+  background-color: #0aa2e9;
 }
 
 .content {
   grid-column: 2/3;
-  background-color: #435585;
+  background-color: #1a1f3a;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.4em;
@@ -225,14 +227,18 @@ h6 {
 
 .card {
   padding: 1em;
-  background-color: white;
-  color: #0d1117;
+  background-color: #252d4a;
+  color: #ffffff;
   box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  border-left: 5px solid #238636;
+  border-left: 5px solid #4fc3f7;
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.card svg {
+  fill: white;
 }
 
 .card-title {
@@ -254,5 +260,70 @@ h6 {
 }
 
 .side-content {
-  background-color: #435585;
+  background-color: #1a1f3a;
+}
+
+.sc-title {
+  font-size: 1rem;
+}
+
+.announce-contents {
+  background-color: #252d4a;
+  color: #ffffff;
+  padding: 0.5em;
+  box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.announce-content {
+  margin: 0;
+}
+
+.announce-content + .announce-content {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.ann-title {
+  font-size: 0.9rem;
+}
+
+.ann-para {
+  font-size: 0.6rem;
+  margin-top: 0;
+}
+
+.trending-contents {
+  background-color: #252d4a;
+  color: #ffffff;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  margin-top: 0.8em;
+}
+
+.trending-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.sc-user-icon {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.username {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.user-detail {
+  margin: 0;
+  font-size: 0.7rem;
 }
